@@ -43,12 +43,12 @@ SQL commands-
 
 ## Constrains
 
-	<li> Primary Key
-	<li> foreign key
-	<li> Check
-	<li> Unique
-	<li> Default
-	<li> Not Null
+<li> Primary Key
+<li> foreign key
+<li> Check
+<li> Unique
+<li> Default
+<li> Not Null
 
 
 ------------------------------------
