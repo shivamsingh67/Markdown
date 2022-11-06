@@ -182,7 +182,7 @@ Example - select sum(salary) from emp;  //1,40,000  total sum of salary
 
 
 ------------------------------JOINS in Sql-------------------------------
-
+<hr style="color:blue">
 
 A SQL Join statement is used to combine data or rows from two or more tables based on a common field between them. Different types of Joins are:
 1.INNER JOIN
@@ -232,11 +232,11 @@ ON Student.ROLL_NO = StudentCourse.ROLL_NO;
 
 output:
 
-| COURSE-ID |  NAME   |  AGE  |
-|   1       | SHIVAM  |  18   |
-|   2       | SAKSHAM |  19   |
-|   2       | KALYAN  |  20   |
-|   3       |  DEEP   |  18   |
+	| COURSE-ID |  NAME   |  AGE  |
+	|   1       | SHIVAM  |  18   |
+	|   2       | SAKSHAM |  19   |
+	|   2       | KALYAN  |  20   |
+	|   3       |  DEEP   |  18   |
 
 ### 2. LEFT JOIN: 
 Left join returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join. 
@@ -265,7 +265,8 @@ LEFT JOIN StudentCourse
 ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 OUTPUT: 
-     |   NAME   |  COURSE-ID  |
+
+         |   NAME   |  COURSE-ID  |
 	 |  SHIVAM  |     1       |
 	 |  SAKSHAM |     2       |
 	 |  KALYAN  |     2       |
@@ -298,12 +299,12 @@ ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 OUTPUT:
 
-|   NAME   |   COURSE-ID  |
-|  SHIVAM  |      1       |
-|  SAKSHAM |      2       |
-|  PRATEEK |      2       |
-|  KALYAN  |      2       |
-|   DEEP   |      3       |
+	|   NAME   |   COURSE-ID  |
+	|  SHIVAM  |      1       |
+	|  SAKSHAM |      2       |
+	|  PRATEEK |      2       |
+	|  KALYAN  |      2       |
+	|   DEEP   |      3       |
 
 
 
@@ -335,13 +336,13 @@ ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 OUTPUT:
 
-| NAME  |   COURSE-ID |
-| ROHIT |     NULL    |
-| SHIVAM|      1      |
-| NIRAJ |     NULL    |
-| NULL  |      9      |
-| NULL  |      10     |
-| RIYANK|       2     |
+	| NAME  |   COURSE-ID |
+	| ROHIT |     NULL    |
+	| SHIVAM|      1      |
+	| NIRAJ |     NULL    |
+	| NULL  |      9      |
+	| NULL  |      10     |
+	| RIYANK|       2     |
 
 
 
