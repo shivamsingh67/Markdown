@@ -1,9 +1,9 @@
-                                                                                SQL
+                                                           # SQL
 SQL is structured(fixed data model or fixed schema) query langiage use to communicate between the user  and data 
 SQL commands-
 1. DDL - The DDL Commands are used to create and modify the schema of the database and its objects. The commands of Data Definition Language deal with how the data should exist in the database.
 
--DDL  (Data definition languge)
+> 1. DDL  (Data definition languge)
 {
 	Create -(create box(table))
 	alter(change structure)
@@ -12,7 +12,7 @@ SQL commands-
 	rename (rename the structure)
 }
 
-2. DML(Data Manipulate Language)
+> 2. DML(Data Manipulate Language)
 
 DML is use to manipulate the data of the table, such as insert into the table ,delete from the table and update from the table etc.
 after creating structure for performing retrive, delete, update, insert we use DML commands.
@@ -28,14 +28,15 @@ DML (Data manipulation language)
 Who user can fetch the data we give them grant means which types of grant we have to give
 like he can view or insert or delete update etc.
 
-3. DCL - DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system. 
+> 3. DCL - DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system. 
 -DCL (Data Control Language)
 {
 	Grant
 	Revoke
 
 }
-4. TCL() - It use to manage the transaction of the database like commit ,rollback,savepoint etc.
+
+> 4. TCL() - It use to manage the transaction of the database like commit ,rollback,savepoint etc.
 
 -TCL (Transation Control Language)
 {
