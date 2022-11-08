@@ -194,7 +194,7 @@ A SQL Join statement is used to combine data or rows from two or more tables bas
                          Student
 	|    ROLL_NO  |   NAME   |   ADDRESS  |  PHONE |  AGE |
 	|       1     |   SHIVAM |    DELHI   |  XXXXX |  18  |
-	|       2     |   SAKSHMA|    BHOPAL  |  XXXXX |  19  |
+	|       2     |   SAKSHAM|    BHOPAL  |  XXXXX |  19  |
 	|       3     |   DEEP   |    KOLKATA |  XXXXX |  18  |
 	|       7     |   ROHIT  |    MUMBAI  |  XXXXX |  18  |
 	|       8     |   NIRAJ  |    ALIPUR  |  XXXXX |  20  |
