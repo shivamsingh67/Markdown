@@ -1,4 +1,4 @@
-                                                                                SQL
+                                                                     SQL
 SQL is structured(fixed data model or fixed schema) query langiage use to communicate between the user  and data 
 SQL commands-
    #### 1. DDL  
