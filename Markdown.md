@@ -1,8 +1,10 @@
                                                                      SQL
-SQL is structured(fixed data model or fixed schema) query language use to communicate between the user  and data 
+SQL is structured(fixed data model or fixed schema) query language use to communicate between the user  and data.
 SQL commands-
    #### 1. DDL  
-   ```<p>The DDL Commands are used to create and modify the schema of the database and its objects. The commands of Data Definition Language deal with how the data 		 should exist in the database.</p>```
+   ```
+   The DDL Commands are used to create and modify the schema of the database and its objects. The commands of Data Definition Language deal with how the data should exist in the database.
+   ```
 
 	DDL  (Data definition languge)
 	{
@@ -79,14 +81,14 @@ desc emp;
 change something in schems(structure)
 
 
-Student
-  int   varchar
-  | id | name |
-  |	   |      |
+Student </p>
+	
+	     int   varchar
+	  | id     | name |
+	  |	   |      |
  
- if we want to insert a new clm name address then
-
-alter table Student add address varchar(20);
+ if we want to insert a new column name address then
+ alter table Student add address varchar(20);
 
 eg-
 create table employee(
@@ -117,8 +119,9 @@ desc emplo
 
 
 
--------------------Constrains in sql-------------------------------------
-
+## Constrains in sql 
+<hr style="color:blue">
+	
 Constrains means condition- we want to add some conditions so that in that way user should perform operations
 we will apply condition based on column(attribute col ka hi naam h)
 
@@ -132,25 +135,26 @@ we will apply condition based on column(attribute col ka hi naam h)
    when user will enter the which will satisfy the check condittion then only it will allow to enter the data in to table.
    Example - check age > 10 user > 10 ;
 
-5. Foreign key- (referential integrity) - Foreign key refers to primery key of the tables .it link two tables together as we put data across many table to minimize the redundancy,
+5. Foreign key- (referential integrity) - Foreign key refers to primery key of the tables.it link two tables together as we put data across many table to minimize the redundancy,
    foreign key also maintain referential intergrity.
 
 6. Default - By default it will take default given value in to the column.
    Example - Salary int default 10000;
 
 
-------------------------------Aggrigate functions in Sql-------------------------------
+## Aggrigate functions in Sql
+<hr style="color:blue">
 
-
-emp
-    |  e_id   |   e_name   |  dept   |  salary  |
-    |		  |			   |         |          |
-    |	1	  |	  Ram	   |   HR    |  10000   |
-    |	2	  |	  Asis	   |   MRKT  |  20000   |
-    |	3	  |	  Ravi	   |   HR    |  30000   |
-    |	4	  |	  Nitin	   |   MRKT  |  40000   |
-    |	5	  |	  varun    |   IT    |  50000   |
-    |	6	  |	  Sunday   | Testing |  Null    | //null means not avilable, does not mean 0
+emp </p>
+	
+	    |  e_id       |   e_name       |  dept   |  salary  |
+	    |		  |                |         |          |
+	    |	1	  |	  Ram	   |   HR    |  10000   |
+	    |	2	  |	  Asis	   |   MRKT  |  20000   |
+	    |	3	  |	  Ravi	   |   HR    |  30000   |
+	    |	4	  |	  Nitin	   |   MRKT  |  40000   |
+	    |	5	  |	  varun    |   IT    |  50000   |
+	    |	6	  |	  Sunday   | Testing |  Null    | //null means not avilable, does not mean 0
 
 
 Aggrigate functions in Sql  
@@ -182,7 +186,7 @@ Example - select sum(salary) from emp;  //1,40,000  total sum of salary
 	select distinct(sum(salary)) from emp;  // it will suming up the uniquely .
 
 
-------------------------------JOINS in Sql-------------------------------
+## JOINS in Sql
 <hr style="color:blue">
 
 A SQL Join statement is used to combine data or rows from two or more tables based on a common field between them. Different types of Joins are:
@@ -214,9 +218,9 @@ The INNER JOIN keyword selects all rows from both the tables as long as the cond
 
 Syntax:
 
-   FROM table1 
-   INNER JOIN table2
-   ON table1.matching_column = table2.matching_column;
+	   FROM table1 
+	   INNER JOIN table2
+	   ON table1.matching_column = table2.matching_column;
 
 table1: First table.
 table2: Second table
@@ -227,9 +231,9 @@ matching_column: Column common to both the tables.
 following query shows the names and age of students enrolled in different courses.
 
 
-SELECT StudentCourse.COURSE_ID, Student.NAME, Student.AGE FROM Student
-INNER JOIN StudentCourse
-ON Student.ROLL_NO = StudentCourse.ROLL_NO;
+	SELECT StudentCourse.COURSE_ID, Student.NAME, Student.AGE FROM Student
+	INNER JOIN StudentCourse
+	ON Student.ROLL_NO = StudentCourse.ROLL_NO;
 
 output:
 
@@ -253,17 +257,17 @@ SYNTAX :
 
 
 
-    table1: First table.
+table1: First table.
 
-    table2: Second table
+table2: Second table
 
-    matching_column: Column common to both the tables.
+matching_column: Column common to both the tables.
 
 
-SELECT Student.NAME,StudentCourse.COURSE_ID 
-FROM Student
-LEFT JOIN StudentCourse 
-ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+	SELECT Student.NAME,StudentCourse.COURSE_ID 
+	FROM Student
+	LEFT JOIN StudentCourse 
+	ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 OUTPUT: 
 
@@ -279,9 +283,9 @@ RIGHT JOIN is similar to LEFT JOIN. This join returns all the rows of the table 
 
 SYNTAX:
 
-FROM table1 
-RIGHT JOIN table2
-ON table1.matching_column = table2.matching_column;
+	FROM table1 
+	RIGHT JOIN table2
+	ON table1.matching_column = table2.matching_column;
 
 
 
@@ -293,10 +297,10 @@ table2: Second table
 matching_column: Column common to both the tables.
 
 
-SELECT Student.NAME,StudentCourse.COURSE_ID 
-FROM Student
-RIGHT JOIN StudentCourse 
-ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+	SELECT Student.NAME,StudentCourse.COURSE_ID 
+	FROM Student
+	RIGHT JOIN StudentCourse 
+	ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 OUTPUT:
 
@@ -316,9 +320,9 @@ The rows for which there is no matching, the result-set will contain NULL values
 
 SYNTAX:
 
-FROM table1 
-FULL JOIN table2
-ON table1.matching_column = table2.matching_column;
+	FROM table1 
+	FULL JOIN table2
+	ON table1.matching_column = table2.matching_column;
 
 
 
@@ -330,10 +334,10 @@ table2: Second table
 
 matching_column: Column common to both the tables.
 
-SELECT Student.NAME,StudentCourse.COURSE_ID 
-FROM Student
-FULL JOIN StudentCourse 
-ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+	SELECT Student.NAME,StudentCourse.COURSE_ID 
+	FROM Student
+	FULL JOIN StudentCourse 
+	ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 OUTPUT:
 
