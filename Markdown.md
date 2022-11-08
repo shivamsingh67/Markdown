@@ -1,5 +1,5 @@
                                                                      SQL
-SQL is structured(fixed data model or fixed schema) query langiage use to communicate between the user  and data 
+SQL is structured(fixed data model or fixed schema) query language use to communicate between the user  and data 
 SQL commands-
    #### 1. DDL  
    ```<p>The DDL Commands are used to create and modify the schema of the database and its objects. The commands of Data Definition Language deal with how the data 		 should exist in the database.</p>```
