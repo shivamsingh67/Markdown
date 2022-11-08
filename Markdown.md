@@ -2,9 +2,9 @@
 SQL is structured(fixed data model or fixed schema) query language use to communicate between the user  and data.
 SQL commands-
    #### 1. DDL  
-   ```
+   
    The DDL Commands are used to create and modify the schema of the database and its objects. The commands of Data Definition Language deal with how the data should exist in the database.
-   ```
+   
 
 	DDL  (Data definition languge)
 	{
@@ -269,13 +269,13 @@ matching_column: Column common to both the tables.
 	LEFT JOIN StudentCourse 
 	ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
-OUTPUT: 
+OUTPUT:
 
-         |   NAME   |  COURSE-ID  |
-	 |  SHIVAM  |     1       |
-	 |  SAKSHAM |     2       |
-	 |  KALYAN  |     2       |
-	 |  DEEP    |     3       |
+		 |   NAME   |  COURSE-ID  |
+		 |  SHIVAM  |     1       |
+		 |  SAKSHAM |     2       |
+		 |  KALYAN  |     2       |
+		 |  DEEP    |     3       |
 
 
 ### 3. RIGHT JOIN: 
